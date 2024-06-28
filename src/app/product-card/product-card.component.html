@@ -1,0 +1,12 @@
+<div class="container-tarjeta">
+    <div class="corner-image" *ngIf="isFavorite()">
+        <img [src]="favorite" alt="Favorite">
+    </div>
+    <div class="container-imagen">
+        <img src="{{product?.image}}" alt="{{product?.title}}">
+    </div>
+    <div class="container-info-product">
+        <p id="nombre">{{product?.title}}</p>
+        <p id="poder" class="precio">{{product?.price}} €</p>
+    </div>
+</div>

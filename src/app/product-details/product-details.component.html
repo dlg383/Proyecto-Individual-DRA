@@ -1,0 +1,17 @@
+<div *ngIf="product" class="container-detalles-producto">
+  <div class="columna-izquierda">
+    <img [src]="product.image" alt="{{product.title}}">
+  </div>
+  <div class="columna-derecha">
+    <h2>{{product.title}}</h2>
+    <p>{{product.description}}</p>
+    <p><strong>Category:</strong> {{product.category}}</p>
+    <p><strong>Price:</strong> {{product.price | currency}}</p>
+    <p><strong>Rating:</strong> {{product.rating.rate}}</p>
+    <div class="corner-image" *ngIf="user">
+      <img *ngIf="!isFavorite" [src]="noFavorite" alt="corner image" (click)="addFavorite()"/>
+      <img *ngIf="isFavorite" [src]="favorite" alt="corner image" (click)="deleteFavorite()"/>
+    </div>
+  </div>
+</div>
+  

@@ -1,0 +1,40 @@
+.iphone-information {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.iphone-information h1 {
+  font-size: 1.5em;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.iphone-data {
+  margin-bottom: 30px;
+}
+
+.iphone-data h2 {
+  font-size: 1.2em;
+  color: #007ACC;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+table td:first-child {
+  width: 30%;
+  font-weight: bold;
+  color: #333;
+}

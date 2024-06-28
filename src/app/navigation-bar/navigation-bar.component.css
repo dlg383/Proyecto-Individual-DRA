@@ -1,0 +1,39 @@
+.grid-left { 
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.grid-right {
+  width: 50%; 
+  display: flex; 
+  justify-content: end;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #003366;
+  padding: 10px;
+}
+
+.item2,
+.item3 {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background-color: #007ACC; 
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0055A4;
+}

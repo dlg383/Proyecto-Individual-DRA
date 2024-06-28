@@ -1,0 +1,26 @@
+<div class="formulario">
+    <h2>Create Your Account</h2>
+    <div class="input">
+      <label class="label" for="name">Name:</label>
+      <input type="text" id="name" #userName name="name" required>
+    </div>
+    <div class="input">
+      <label class="label" for="password">Password:</label>
+      <div class="password-container">
+        <input type="password" id="password1" #userPassword name="password" required>
+        <img class="toggle-password" (click)="togglePasswordVisibility1()" [src]="passwordImage1" alt="Show Password">
+      </div>
+    </div>
+    <div class="input">
+      <label class="label" for="password">Confirm Password:</label>
+      <div class="password-container">
+        <input type="password" id="password2" #userPassword2 name="password" required>
+        <img class="toggle-password" (click)="togglePasswordVisibility2()" [src]="passwordImage2" alt="Show Password">
+      </div>
+    </div>
+    <button (click)="addUser(userName.value, userPassword.value, userPassword2.value)">Create</button>
+    <div *ngIf="errorMessage" class="error">
+      {{ errorMessage }}
+    </div>
+  </div>
+  

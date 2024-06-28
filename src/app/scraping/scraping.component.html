@@ -1,0 +1,73 @@
+<div *ngIf="iphoneData.length > 0" class="iphone-information">
+    <h1>iPhone 15 Information</h1>
+    <div *ngFor="let data of iphoneData" class="iphone-data">
+      <h2>{{ data.tipo }}</h2>
+      <table>
+        <tr>
+          <td><strong>Fabricante:</strong></td>
+          <td>{{ data.fabricante }}</td>
+        </tr>
+        <tr>
+          <td><strong>Pantalla:</strong></td>
+          <td>{{ data.pantalla }}</td>
+        </tr>
+        <tr>
+          <td><strong>RAM:</strong></td>
+          <td>{{ data.ram }}</td>
+        </tr>
+        <tr>
+          <td><strong>Procesador:</strong></td>
+          <td>{{ data.procesador }}</td>
+        </tr>
+        <tr>
+          <td><strong>Colores:</strong></td>
+          <td>{{ data.colores }}</td>
+        </tr>
+        <tr>
+          <td><strong>Fecha de Lanzamiento:</strong></td>
+          <td>{{ data.fechaLanzamiento }}</td>
+        </tr>
+        <tr>
+          <td><strong>Peso:</strong></td>
+          <td>{{ data.peso }}</td>
+        </tr>
+        <tr>
+          <td><strong>Memoria:</strong></td>
+          <td>{{ data.memoria }}</td>
+        </tr>
+        <tr>
+          <td><strong>GPU:</strong></td>
+          <td>{{ data.gpu }}</td>
+        </tr>
+        <tr>
+          <td><strong>SoC:</strong></td>
+          <td>{{ data.soc }}</td>
+        </tr>
+        <tr>
+          <td><strong>Conectividad:</strong></td>
+          <td>{{ data.conectividad }}</td>
+        </tr>
+        <tr>
+          <td><strong>Audio:</strong></td>
+          <td>{{ data.audio }}</td>
+        </tr>
+        <tr>
+          <td><strong>Videocámara:</strong></td>
+          <td>{{ data.videocamara }}</td>
+        </tr>
+        <tr>
+          <td><strong>Videocámara Trasera:</strong></td>
+          <td>{{ data.videocamaraTrasera }}</td>
+        </tr>
+        <tr>
+          <td><strong>Batería:</strong></td>
+          <td>{{ data.bateria }}</td>
+        </tr>
+        <tr>
+          <td><strong>Sistema Operativo:</strong></td>
+          <td>{{ data.sistemaOperativo }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  

@@ -1,0 +1,9 @@
+<div class="container">
+    <h2>My Products</h2>
+
+    <div class="grid-container-tarjetas">
+        <div *ngFor="let product of products"  class="container-tarjeta">
+            <app-product-card [product]="product" routerLink="/details/{{product.id}}"></app-product-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+.formulario {
+  background-color: #FFFFFF;
+  border: 1px solid #007ACC;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+  color: #003366;
+  text-align: center;
+}
+
+.input {
+  margin-bottom: 15px;
+}
+
+.label,
+.input input {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.label {
+  color: #003366;
+  font-weight: bold;
+}
+
+.password-container {
+  position: relative;
+}
+
+.input > input{
+  border: 1px solid #007ACC;
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.password-container input {
+  border: 1px solid #007ACC;
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: #007ACC;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.password-container input:focus {
+  border-color: #0055A4;
+  outline: none;
+}
+
+button {
+  background-color: #007ACC;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0055A4;
+}
+
+.error {
+  color: #FF0000;
+  text-align: center;
+  margin-top: 10px;
+}
